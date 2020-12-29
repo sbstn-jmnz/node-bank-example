@@ -52,7 +52,7 @@ async function showBalance(account){
         values: [amount, account]
       };
     const newTrx = { 
-      text: "INSERT INTO trxs (description, date, amount, accountId) values ($1, $2, $3, $4) returning *", 
+      text: "INSERT INTO trxs (description, date, amount, accountId) values ($1, $2, $3, $4) RETURNING *", 
       values: [desc, date, amount, account] 
       };
     try { 
