@@ -1,0 +1,1 @@
+INSERT INTO accounts (balance) values (20000), (15000);
